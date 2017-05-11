@@ -33,9 +33,6 @@ def vstup_je_cislo(vstup, vstup_entry, index):
     return zadano_spravne
 
 
-# dosazeni tabulkove hodnoty "x" podle pomeru R/t (z tuple "x_tabulka") - pokud neexistuje tab. hodnota, dosadi se
-# aproximovana hodnota
-# vypocet "l_0" a vypocet "l" (podle typu profilu)
 def spocti_a_vrat_vypocet(*args):
     rkut = float(vstup_R.get()) / float(vstup_t.get())
     x = 9.936985045 * pow(10, -3) * pow(rkut, 3 / 2) - 8.345332984 * pow(10, -2) * rkut + 2.385543455 * pow(10, -1) * pow(rkut, 1 / 2) + 2.514238307 * pow(10, -1)
