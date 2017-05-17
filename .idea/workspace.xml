@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2c3333ca-d9e0-450c-9b5a-a558916fb31a" name="Default" comment="seznam změn:&#10; - &#10; - nevhodný obrázek profilu U nahrazen méně nevhodným obrázkem profilu U">
+    <list default="true" id="2c3333ca-d9e0-450c-9b5a-a558916fb31a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -78,8 +78,8 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
-        <option value="Ja" />
         <option value="Jan Hruška &lt;hru3kus@gmail.com&gt;" />
+        <option value="Ja" />
         <option value="Jan Hruška" />
         <option value="Jan Hruska" />
       </list>
@@ -313,7 +313,14 @@
       <option name="project" value="LOCAL" />
       <updated>1495036981418</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="xml commit">
+      <created>1495037112683</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1495037112683</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -368,7 +375,8 @@
     <MESSAGE value="Prvni commit provedeny se vsi slavou a jasotem" />
     <MESSAGE value="Treti communist, asi bych mel prejmenovat repozitar" />
     <MESSAGE value="Úprava kódu do trochu méně nehezké podoby&#10;seznam změn:&#10; - drobná refaktorizace, mírná pythonizace a podobné vyfikundace&#10; - přidán warning pro špatné hodnoty&#10; - nevhodný obrázek profilu U nahrazen méně nevhodným obrázkem profilu U" />
-    <option name="LAST_COMMIT_MESSAGE" value="Úprava kódu do trochu méně nehezké podoby&#10;seznam změn:&#10; - drobná refaktorizace, mírná pythonizace a podobné vyfikundace&#10; - přidán warning pro špatné hodnoty&#10; - nevhodný obrázek profilu U nahrazen méně nevhodným obrázkem profilu U" />
+    <MESSAGE value="xml commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="xml commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
