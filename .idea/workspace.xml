@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2c3333ca-d9e0-450c-9b5a-a558916fb31a" name="Default" comment="">
+    <list default="true" id="2c3333ca-d9e0-450c-9b5a-a558916fb31a" name="Default" comment="xml commit">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bender.py" afterPath="$PROJECT_DIR$/bender.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,51 +16,33 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="bender.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="bender.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bender.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="20" column="38" lean-forward="false" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+            <state relative-caret-position="-369">
+              <caret line="173" column="0" lean-forward="false" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
               <folding>
-                <element signature="e#23#44#0" expanded="true" />
-                <element signature="e#143#262#0" expanded="false" />
-                <element signature="e#316#719#0" expanded="false" />
-                <element signature="e#781#1449#0" expanded="false" />
-                <element signature="e#1679#2615#0" expanded="false" />
-                <element signature="e#2670#3770#0" expanded="false" />
-                <element signature="e#3798#4001#0" expanded="false" />
-                <element signature="e#4029#4231#0" expanded="false" />
-                <element signature="e#4247#4405#0" expanded="false" />
+                <element signature="e#24#232#1" expanded="false" />
+                <element signature="e#234#255#0" expanded="true" />
+                <element signature="e#354#574#0" expanded="false" />
+                <element signature="e#629#1238#0" expanded="false" />
+                <element signature="e#1301#2285#0" expanded="false" />
+                <element signature="e#2326#3610#0" expanded="false" />
+                <element signature="e#3665#5409#0" expanded="false" />
+                <element signature="e#5437#5828#0" expanded="false" />
+                <element signature="e#5856#6210#0" expanded="false" />
+                <element signature="e#6283#6441#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bende_reset.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bende_reset.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1989">
-              <caret line="203" column="0" lean-forward="false" selection-start-line="203" selection-start-column="0" selection-end-line="203" selection-end-column="0" />
-              <folding>
-                <element signature="e#23#44#0" expanded="true" />
-                <element signature="e#316#719#0" expanded="false" />
-                <element signature="e#781#1449#0" expanded="false" />
-                <element signature="e#1679#2615#0" expanded="false" />
-                <element signature="e#2670#3770#0" expanded="false" />
-                <element signature="e#3798#4001#0" expanded="false" />
-                <element signature="e#4029#4231#0" expanded="false" />
-                <element signature="e#4694#4852#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="136">
-                <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <first_editor relative-caret-position="119">
+                <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -92,8 +76,8 @@
         <option value="$PROJECT_DIR$/nfb.py" />
         <option value="$PROJECT_DIR$/mmm.py" />
         <option value="$PROJECT_DIR$/bender_napicu_reset.py" />
-        <option value="$PROJECT_DIR$/bender.py" />
         <option value="$PROJECT_DIR$/README.txt" />
+        <option value="$PROJECT_DIR$/bender.py" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -101,7 +85,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1924" />
+    <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -120,8 +104,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -324,26 +308,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19444445" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19427083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="1.0" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.49791667" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980973" sideWeight="0.49375" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28224102" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32241014" sideWeight="0.49791667" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.49375" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.49791667" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -379,45 +363,122 @@
     <option name="LAST_COMMIT_MESSAGE" value="xml commit" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="4" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/bender.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#232#1" expanded="false" />
+            <element signature="e#234#255#0" expanded="true" />
+            <element signature="e#354#574#0" expanded="false" />
+            <element signature="e#629#1238#0" expanded="false" />
+            <element signature="e#1301#2285#0" expanded="false" />
+            <element signature="e#2326#3610#0" expanded="false" />
+            <element signature="e#3665#5409#0" expanded="false" />
+            <element signature="e#5437#5828#0" expanded="false" />
+            <element signature="e#5856#6210#0" expanded="false" />
+            <element signature="e#6283#6441#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="136">
+            <caret line="8" column="2" lean-forward="false" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bender.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="20" column="38" lean-forward="false" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+          <folding>
+            <element signature="e#24#232#1" expanded="false" />
+            <element signature="e#234#255#0" expanded="true" />
+            <element signature="e#354#574#0" expanded="false" />
+            <element signature="e#629#1238#0" expanded="false" />
+            <element signature="e#1301#2285#0" expanded="false" />
+            <element signature="e#2326#3610#0" expanded="false" />
+            <element signature="e#3665#5409#0" expanded="false" />
+            <element signature="e#5437#5828#0" expanded="false" />
+            <element signature="e#5856#6210#0" expanded="false" />
+            <element signature="e#6283#6441#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="136">
+            <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bender.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="20" column="38" lean-forward="false" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+          <folding>
+            <element signature="e#24#232#1" expanded="false" />
+            <element signature="e#234#255#0" expanded="true" />
+            <element signature="e#354#574#0" expanded="false" />
+            <element signature="e#629#1238#0" expanded="false" />
+            <element signature="e#1301#2285#0" expanded="false" />
+            <element signature="e#2326#3610#0" expanded="false" />
+            <element signature="e#3665#5409#0" expanded="false" />
+            <element signature="e#5437#5828#0" expanded="false" />
+            <element signature="e#5856#6210#0" expanded="false" />
+            <element signature="e#6283#6441#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="136">
+            <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bender.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="20" column="38" lean-forward="true" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
           <folding>
-            <element signature="e#23#44#0" expanded="true" />
-            <element signature="e#143#262#0" expanded="false" />
-            <element signature="e#316#719#0" expanded="false" />
-            <element signature="e#781#1449#0" expanded="false" />
-            <element signature="e#1679#2615#0" expanded="false" />
-            <element signature="e#2670#3770#0" expanded="false" />
-            <element signature="e#3798#4001#0" expanded="false" />
-            <element signature="e#4029#4231#0" expanded="false" />
-            <element signature="e#4247#4405#0" expanded="false" />
+            <element signature="e#24#232#1" expanded="false" />
+            <element signature="e#234#255#0" expanded="true" />
+            <element signature="e#354#574#0" expanded="false" />
+            <element signature="e#629#1238#0" expanded="false" />
+            <element signature="e#1301#2285#0" expanded="false" />
+            <element signature="e#2326#3610#0" expanded="false" />
+            <element signature="e#3665#5409#0" expanded="false" />
+            <element signature="e#5437#5828#0" expanded="false" />
+            <element signature="e#5856#6210#0" expanded="false" />
+            <element signature="e#6283#6441#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bende_reset.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1989">
-          <caret line="203" column="0" lean-forward="false" selection-start-line="203" selection-start-column="0" selection-end-line="203" selection-end-column="0" />
-          <folding>
-            <element signature="e#23#44#0" expanded="true" />
-            <element signature="e#316#719#0" expanded="false" />
-            <element signature="e#781#1449#0" expanded="false" />
-            <element signature="e#1679#2615#0" expanded="false" />
-            <element signature="e#2670#3770#0" expanded="false" />
-            <element signature="e#3798#4001#0" expanded="false" />
-            <element signature="e#4029#4231#0" expanded="false" />
-            <element signature="e#4694#4852#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/bende_reset.py" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -434,15 +495,16 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#23#44#0" expanded="true" />
-            <element signature="e#143#262#0" expanded="false" />
-            <element signature="e#316#719#0" expanded="false" />
-            <element signature="e#781#1449#0" expanded="false" />
-            <element signature="e#1679#2615#0" expanded="false" />
-            <element signature="e#2670#3770#0" expanded="false" />
-            <element signature="e#3798#4001#0" expanded="false" />
-            <element signature="e#4029#4231#0" expanded="false" />
-            <element signature="e#4247#4405#0" expanded="false" />
+            <element signature="e#24#232#1" expanded="false" />
+            <element signature="e#234#255#0" expanded="true" />
+            <element signature="e#354#574#0" expanded="false" />
+            <element signature="e#629#1238#0" expanded="false" />
+            <element signature="e#1301#2285#0" expanded="false" />
+            <element signature="e#2326#3610#0" expanded="false" />
+            <element signature="e#3665#5409#0" expanded="false" />
+            <element signature="e#5437#5828#0" expanded="false" />
+            <element signature="e#5856#6210#0" expanded="false" />
+            <element signature="e#6283#6441#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -461,41 +523,7 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bender.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="20" column="38" lean-forward="false" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
-          <folding>
-            <element signature="e#23#44#0" expanded="true" />
-            <element signature="e#143#262#0" expanded="false" />
-            <element signature="e#316#719#0" expanded="false" />
-            <element signature="e#781#1449#0" expanded="false" />
-            <element signature="e#1679#2615#0" expanded="false" />
-            <element signature="e#2670#3770#0" expanded="false" />
-            <element signature="e#3798#4001#0" expanded="false" />
-            <element signature="e#4029#4231#0" expanded="false" />
-            <element signature="e#4247#4405#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bende_reset.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1989">
-          <caret line="203" column="0" lean-forward="false" selection-start-line="203" selection-start-column="0" selection-end-line="203" selection-end-column="0" />
-          <folding>
-            <element signature="e#23#44#0" expanded="true" />
-            <element signature="e#316#719#0" expanded="false" />
-            <element signature="e#781#1449#0" expanded="false" />
-            <element signature="e#1679#2615#0" expanded="false" />
-            <element signature="e#2670#3770#0" expanded="false" />
-            <element signature="e#3798#4001#0" expanded="false" />
-            <element signature="e#4029#4231#0" expanded="false" />
-            <element signature="e#4694#4852#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/bende_reset.py" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -505,11 +533,30 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="136">
-            <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <first_editor relative-caret-position="119">
+            <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bender.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-369">
+          <caret line="173" column="0" lean-forward="false" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#232#1" expanded="false" />
+            <element signature="e#234#255#0" expanded="true" />
+            <element signature="e#354#574#0" expanded="false" />
+            <element signature="e#629#1238#0" expanded="false" />
+            <element signature="e#1301#2285#0" expanded="false" />
+            <element signature="e#2326#3610#0" expanded="false" />
+            <element signature="e#3665#5409#0" expanded="false" />
+            <element signature="e#5437#5828#0" expanded="false" />
+            <element signature="e#5856#6210#0" expanded="false" />
+            <element signature="e#6283#6441#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
