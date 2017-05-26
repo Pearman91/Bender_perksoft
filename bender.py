@@ -63,7 +63,7 @@ def je_vstup_cislo(vstup_hodnota, vstup_objekt, index):
     return zadano_spravne
 
 
-def spocti_a_vrat_vypocet(*args):
+def spocti_a_vrat_vypocet():
     """
     Výpočet délky ohybu a celkové délky profilu a jejich vypsání na obrazovku. Hodnota k-faktoru 'x' je pokud možno 
     dosazena z 'x_tabulka', jinak je vypočtena z aproximace. 
@@ -79,6 +79,7 @@ def spocti_a_vrat_vypocet(*args):
             # None
             # shall
             pass
+
     # ošklivá, ale přesná aproximace - lépe si jí moc nevšímat
     if x is None:
         x = 9.936985045 * pow(10, -3) * pow(rkut, 3 / 2) - 8.345332984 * pow(10, -2) * rkut\
@@ -86,11 +87,19 @@ def spocti_a_vrat_vypocet(*args):
 
     l_0 = 3.1415926535 * (180 - float(vstup_alfa.get())) * (float(vstup_R.get()) + float(vstup_t.get()) * x) / 180
 
-    if typ_profilu.get() == "l_profil":
-        l = l_0 + float(vstup_a.get()) + float(vstup_b.get())
+    # délka a (resp. b) - pravoúhé L: vstup_a.get()-vstup_t.get()-vstup_R.get(
+    #                   - ostatní: vstup_a.get()
+    a = float(vstup_a.get())
+    b = float(vstup_b.get())
+    if typ_profilu.get() == "l_profil_pravouhle":
+        a = a - float(vstup_R.get()) - float(vstup_t.get())
+        b = b - float(vstup_R.get()) - float(vstup_t.get())
+
+    if typ_profilu.get() == "l_profil" or typ_profilu.get() == "l_profil_pravouhle":
+        l = l_0 + a + b
         hodnota_l_0.configure(text="L\u2080 = %.2f" % l_0)
     elif typ_profilu.get() == "u_profil":
-        l = 2 * l_0 + float(vstup_a.get()) + float(vstup_b.get()) + float(vstup_c.get())
+        l = 2 * l_0 + a + b + float(vstup_c.get())
         hodnota_l_0.configure(text="L\u2080\u2081 = L\u2080\u2082 = %.2f" % l_0)
     else:
         print("IMPOSSIBIRU!!!")
@@ -118,7 +127,7 @@ def spocti_a_vrat(prepnuto_mezi_profily=False):
         prepnuto_mezi_profily = False
 
     podminka1 = typ_profilu.get() == "u_profil" and all(szn)
-    podminka2 = typ_profilu.get() == "l_profil" and all(szn[:-1])
+    podminka2 = (typ_profilu.get() == "l_profil" or typ_profilu.get() == "l_profil_pravouhle") and all(szn[:-1])
     if podminka1 or podminka2:
         spocti_a_vrat_vypocet()
     elif typ_profilu.get() == "u_profil":
@@ -133,13 +142,32 @@ def spocti_a_vrat(prepnuto_mezi_profily=False):
             messagebox.showwarning("Upozornění", "Zadali jste nesprávnou hodnotu/hodnoty!")
 
 
+def l_profil_pravouhle(*args):
+    """
+    Přepnutí radiobuttonu na pravoúhlý 'L' profil - změní se obrázek a zneaktivní se Entry pro hodnoty 'c' a 'alfa'
+    Volá se funkce spocti_a_vrat - 'True': došlo k přepnutí mezi profily.
+    TODO: vyřešit přepínámí mezi profily jednou funkcí
+    """
+    delka_a.configure(text="Délka a'")
+    delka_b.configure(text="Délka b'")
+    vstup_c.configure(state="disabled")
+    delka_c.configure(fg="grey")
+    vstup_alfa.configure(state="disabled")
+    obrazek_label = Label(ramec4, image=obrazekL)
+    obrazek_label.place(relx=0.5, rely=0.5, anchor="center")
+    spocti_a_vrat(True)
+
+
 def l_profil(*args):
     """
     Přepnutí radiobuttonu na 'L' profil - změní se obrázek a zneaktivní se Entry pro hodnotu 'c'
     Volá se funkce spocti_a_vrat - 'True': došlo k přepnutí mezi profily. 
     """
+    delka_a.configure(text="Délka a")
+    delka_b.configure(text="Délka b")
     vstup_c.configure(state="disabled")
     delka_c.configure(fg="grey")
+    vstup_alfa.configure(state="normal")
     obrazek_label = Label(ramec4, image=obrazekL)
     obrazek_label.place(relx=0.5, rely=0.5, anchor="center")
     spocti_a_vrat(True)
@@ -147,11 +175,13 @@ def l_profil(*args):
 
 def u_profil(*args):
     """
-    Přepnutí radiobuttonu na 'U' profil - viz  komentář k funkci l_profil.
-    TODO: vyřešit přepínámí mezi oběma profily jednou funkcí
+    Přepnutí radiobuttonu na 'U' profil.
     """
+    delka_a.configure(text="Délka a")
+    delka_b.configure(text="Délka b")
     vstup_c.configure(state="normal")
     delka_c.configure(fg="black")
+    vstup_alfa.configure(state="normal")
     obrazek_label = Label(ramec4, image=obrazekU)
     obrazek_label.place(relx=0.5, rely=0.5, anchor="center")
     spocti_a_vrat(True)
@@ -163,9 +193,9 @@ x_tabulka = ((0.1, 0.32), (0.25, 0.35), (0.5, 0.38), (1, 0.42),
              (6, 0.48), (8, 0.483), (10, 0.486))
 
 master = Tk()
-master.wm_title("Bender1.3.7")
+master.wm_title("Bender1.3.7.1")
 master.iconbitmap("icon.ico")
-master.geometry("560x320+500+200")
+master.geometry("600x320+500+200")
 master.resizable(width=False, height=False)
 
 obrazekL = PhotoImage(file="obrL.gif")
@@ -175,7 +205,7 @@ Grid.rowconfigure(master, 0, weight=1)
 Grid.rowconfigure(master, 1, weight=5)
 Grid.rowconfigure(master, 2, weight=2)
 Grid.columnconfigure(master, 0, weight=1)
-Grid.columnconfigure(master, 1, weight=7)
+Grid.columnconfigure(master, 1, weight=50)
 
 ramec1 = LabelFrame(master, text=" Výběr profilu: ")  # Vyber profilu
 ramec1.grid(row=0, column=0, rowspan=1, columnspan=1, sticky=W + E + N + S)
@@ -189,8 +219,10 @@ ramec4.grid(row=0, column=1, rowspan=3, columnspan=1, sticky=W + E + N + S)
 Label(ramec2, text="Poloměr R ").grid(row=0, sticky=W, ipadx=4)
 Label(ramec2, text="Úhel \u03B1").grid(row=1, sticky=W, ipadx=4)
 Label(ramec2, text="Tloušťka t").grid(row=2, sticky=W, ipadx=4)
-Label(ramec2, text="Délka a ").grid(row=3, sticky=W, ipadx=4)
-Label(ramec2, text="Délka b ").grid(row=4, sticky=W, ipadx=4)
+delka_a = Label(ramec2, text="Délka a ")
+delka_a.grid(row=3, sticky=W, ipadx=4)
+delka_b = Label(ramec2, text="Délka b ")
+delka_b.grid(row=4, sticky=W, ipadx=4)
 delka_c = Label(ramec2, text="Délka c ")
 delka_c.grid(row=5, sticky=W, ipadx=4)
 
@@ -200,7 +232,7 @@ vstup_t = Entry(ramec2)
 vstup_a = Entry(ramec2)
 vstup_b = Entry(ramec2)
 vstup_c = Entry(ramec2)
-vstupy = [[vstup_R, "20"], [vstup_alfa, "90"], [vstup_t, "5"], [vstup_a, "0"], [vstup_b, "0"], [vstup_c, "0"]]
+vstupy = [[vstup_R, "20"], [vstup_alfa, "90"], [vstup_t, "5"], [vstup_a, "100"], [vstup_b, "100"], [vstup_c, "0"]]
 vloz_a_vykresli_vstupni_pole(vstupy)
 
 hodnota_l_0 = Label(ramec3, text="L\u2080 =")
@@ -209,11 +241,13 @@ hodnota_l = Label(ramec3, text="L =")
 hodnota_l.grid(row=1, column=0, columnspan=2, sticky=W, ipadx=8)
 
 typ_profilu = StringVar()
+vyber_profiluP = Radiobutton(ramec1, text='''Pravoúhlý "L"''', variable=typ_profilu, value="l_profil_pravouhle", command=l_profil_pravouhle)
 vyber_profiluL = Radiobutton(ramec1, text='''Profil "L"''', variable=typ_profilu, value="l_profil", command=l_profil)
 vyber_profiluU = Radiobutton(ramec1, text='''Profil "U"''', variable=typ_profilu, value="u_profil", command=u_profil)
-vyber_profiluL.grid(row=0, column=0, ipadx=8, ipady=4, sticky=W + E + N + S)
-vyber_profiluU.grid(row=0, column=1, ipadx=4, ipady=4, sticky=W + E + N + S)
-vyber_profiluL.invoke()
+vyber_profiluP.grid(row=0, column=0, ipadx=8, ipady=4, sticky=W + E + N + S)
+vyber_profiluL.grid(row=0, column=1, ipadx=8, ipady=4, sticky=W + E + N + S)
+vyber_profiluU.grid(row=0, column=2, ipadx=4, ipady=4, sticky=W + E + N + S)
+vyber_profiluP.invoke()
 
 cudl_pocitaci = Button(ramec2, text="Spočítat", command=spocti_a_vrat)
 cudl_pocitaci.grid(row=6, column=1, ipadx=10, sticky=W)
